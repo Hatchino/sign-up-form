@@ -1,0 +1,99 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+    background: url(images/bg-intro-desktop.png) no-repeat;
+    background-color: var(--Red);
+    background-size: cover;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.learn {
+    color: white;
+    width: 30%;
+}
+.learn h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.learn p {
+    line-height: 25px;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.formulaire button {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 0;
+    color: white;
+    background-color: var(--Blue);
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 0px 0px rgba(66, 62, 62, 0.38);
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px rgba(66, 62, 62, 0.38);
+}
+form input {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    border: var(--Grayish-Blue) 1px solid;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--Grayish-Blue);
+}
+#submit {
+    background-color: var(--Green);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 20px;
+    border: 0;
+    box-shadow: 0px 3px 0px 0px rgba(19, 137, 86, 0.6);
+}
+input:hover {
+    color: var(--Dark-Blue);
+    cursor: pointer;
+}
+span {
+    font-weight: 600;
+}
+.formulaire p {
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+    text-align: center;
+}
+p span {
+    color: var(--Red);
+}
